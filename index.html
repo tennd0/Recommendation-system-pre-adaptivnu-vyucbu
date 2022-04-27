@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation system pre personalizovanú výučbu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start test button -->
+    <div class="start_btn"><button>Začať test</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Pravidlá testu</span></div>
+        <div class="info-list">
+            <div class="info">1. Budeš mať len <span>10 sekúnd</span> na každú otázku.</div>
+            <div class="info">2. Počet otázok v tomto teste je <span id="pocetOtazok"></span>.</div>
+            <div class="info">3. Raz vyberieš odpoveď, potom ju už nevieš zmeniť.</div>
+            <div class="info">4. Nevieš vybrať odpoveď ako náhle dojde čas.</div>
+            <div class="info">5. Nevieš odísť z testu, kým ho nedokončíš.</div>
+            <div class="info">6. Dostaneš body za každú zodpovedanú otázku.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Skončiť test</button>
+            <button class="restart">Pokračovať</button>
+        </div>
+    </div>
+
+    <!-- Test Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Autoškola test dopravných značiek</div>
+            <div class="timer">
+                <div class="time_left_txt">Čas</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+
+            <div class="images">
+                <img/>
+                <!-- Here i insert image -->
+            </div>
+
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Ďalšia otázka</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Dokončil si test!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Opakovať test</button>
+            <button class="quit">Skončiť test</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+    <!-- Json questions.js -->
+    <script src="js/json.js"></script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
